@@ -26,10 +26,7 @@ class AppointmentsRepository {
   }
 
   public create({ provider, date }: ICreateAppointment): Appointment {
-    const appointment = new Appointment({
-      provider,
-      date,
-    });
+    const appointment = new Appointment({ provider, date });
 
     this.appointments.push(appointment);
 
